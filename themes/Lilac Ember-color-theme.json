@@ -6,7 +6,11 @@
   "colors": {
     "editor.background": "#1A1A1A",
     "editor.foreground": "#EDEDED",
-    "editorCursor.foreground": "#B897F4",
+    "editorCursor.foreground": "#EDEDED",
+
+    "editorGutter.modifiedBackground": "#858585",
+    "editorGutter.addedBackground": "#9A9A9A",
+    "editorGutter.deletedBackground": "#707070",
     "editorLineNumber.foreground": "#555555",
     "editorLineNumber.activeForeground": "#EDEDED",
     "editor.selectionBackground": "#555555",
@@ -20,7 +24,7 @@
     "editorBracketHighlight.foreground6": "#EDEDED",
     "editorBracketHighlight.unexpectedBracket.foreground": "#EDEDED",
 
-    "focusBorder": "#B897F4",
+    "focusBorder": "#D0D3D8",
 
     "titleBar.activeBackground": "#1A1A1A",
     "titleBar.activeForeground": "#EDEDED",
@@ -44,11 +48,11 @@
     "widget.shadow": "#000000",
 
     "sideBar.background": "#1A1A1A",
-    "sideBar.foreground": "#D0D3D8",
+    "sideBar.foreground": "#c9caca",
     "sideBar.border": "#303030",
 
     "sideBarTitle.background": "#1A1A1A",
-    "sideBarTitle.foreground": "#EDEDED",
+    "sideBarTitle.foreground": "#D0D3D8",
     "sideBarTitle.border": "#303030",
 
     "sideBarSectionHeader.background": "#1A1A1A",
@@ -71,7 +75,7 @@
     "tab.border": "#303030",
 
     "gitDecoration.addedResourceForeground": "#D0D3D8",
-    "gitDecoration.modifiedResourceForeground": "#EDEDED",
+    "gitDecoration.modifiedResourceForeground": "#D0D3D8",
     "gitDecoration.untrackedResourceForeground": "#D0D3D8"
   },
 
@@ -98,7 +102,13 @@
         "entity.name.type",
         "entity.name.type.ts",
         "entity.name.type.class.ts",
-        "entity.name.type.interface.ts"
+        "entity.name.type.interface.ts",
+        "entity.name.type.js",
+        "entity.name.type.class.js",
+        "entity.name.type.interface.js",
+        "entity.name.type.js.jsx",
+        "entity.name.type.class.js.jsx",
+        "entity.name.type.interface.js.jsx"
       ],
       "settings": {
         "foreground": "#B897F4"
@@ -106,14 +116,18 @@
     },
 
     {
-      "scope": "support.type.void.ts",
+      "scope": "support.type.void",
       "settings": {
         "foreground": "#F8A6C8"
       }
     },
 
     {
-      "scope": "meta.class.ts entity.name.type.class.ts",
+      "scope": [
+        "meta.class.ts entity.name.type.class.ts",
+        "meta.class.js entity.name.type.class.js",
+        "meta.class.js.jsx entity.name.type.class.js.jsx"
+      ],
       "settings": {
         "foreground": "#F1A275"
       }
@@ -126,7 +140,15 @@
         "entity.name.class",
         "entity.other.inherited-class.ts",
         "support.class",
-        "support.class.ts"
+        "support.class.ts",
+        "entity.name.type.class.js",
+        "entity.name.type.js",
+        "entity.other.inherited-class.js",
+        "support.class.js",
+        "entity.name.type.class.js.jsx",
+        "entity.name.type.js.jsx",
+        "entity.other.inherited-class.js.jsx",
+        "support.class.js.jsx"
       ],
       "settings": {
         "foreground": "#B897F4"
@@ -134,7 +156,12 @@
     },
 
     {
-      "scope": "new.expr.ts meta.function-call.ts entity.name.function.ts",
+      "scope": [
+        "new.expr.ts meta.function-call.ts entity.name.function.ts",
+        "new.expr.tsx meta.function-call.tsx entity.name.function.tsx",
+        "new.expr.js meta.function-call.js entity.name.function.js",
+        "new.expr.js.jsx meta.function-call.js.jsx entity.name.function.js.jsx"
+      ],
       "settings": {
         "foreground": "#F1A275"
       }
@@ -144,7 +171,11 @@
       "scope": [
         "meta.definition.function.ts entity.name.function.ts",
         "entity.name.function.ts",
-        "entity.name.function"
+        "entity.name.function",
+        "meta.definition.function.js entity.name.function.js",
+        "entity.name.function.js",
+        "meta.definition.function.js.jsx entity.name.function.js.jsx",
+        "entity.name.function.js.jsx"
       ],
       "settings": {
         "foreground": "#B897F4"
@@ -152,7 +183,11 @@
     },
 
     {
-      "scope": "meta.definition.method.ts entity.name.function.ts",
+      "scope": [
+        "meta.definition.method.ts entity.name.function.ts",
+        "meta.definition.method.js entity.name.function.js",
+        "meta.definition.method.js.jsx entity.name.function.js.jsx"
+      ],
       "settings": {
         "foreground": "#EDEDED"
       }
@@ -165,7 +200,17 @@
         "variable.other.constant",
         "variable.other.constant.ts",
         "variable.other.object.ts",
-        "variable.other.constant.object.ts"
+        "variable.other.constant.object.ts",
+        "variable.other.object.tsx",
+        "variable.other.constant.object.tsx",
+        "variable.other.readwrite.js",
+        "variable.other.constant.js",
+        "variable.other.object.js",
+        "variable.other.constant.object.js",
+        "variable.other.readwrite.js.jsx",
+        "variable.other.constant.js.jsx",
+        "variable.other.object.js.jsx",
+        "variable.other.constant.object.js.jsx"
       ],
       "settings": {
         "foreground": "#BDA0F1"
@@ -175,7 +220,13 @@
     {
       "scope": [
         "variable.other.object.ts",
-        "variable.other.constant.object.ts"
+        "variable.other.constant.object.ts",
+        "variable.other.object.tsx",
+        "variable.other.constant.object.tsx",
+        "variable.other.object.js",
+        "variable.other.constant.object.js",
+        "variable.other.object.js.jsx",
+        "variable.other.constant.object.js.jsx"
       ],
       "settings": {
         "foreground": "#B897F4"
@@ -183,7 +234,12 @@
     },
 
     {
-      "scope": ["variable.parameter", "variable.parameter.ts"],
+      "scope": [
+        "variable.parameter",
+        "variable.parameter.ts",
+        "variable.parameter.js",
+        "variable.parameter.js.jsx"
+      ],
       "settings": {
         "foreground": "#BDA0F1"
       }
@@ -199,7 +255,23 @@
         "variable.object.property.ts",
         "meta.definition.property.ts variable.object.property.ts",
         "meta.object-literal.key.ts",
-        "support.variable.property.ts"
+        "support.variable.property.ts",
+        "variable.other.property.js",
+        "variable.other.constant.property.js",
+        "variable.other.object.property.js",
+        "variable.other.constant.object.property.js",
+        "variable.object.property.js",
+        "meta.definition.property.js variable.object.property.js",
+        "meta.object-literal.key.js",
+        "support.variable.property.js",
+        "variable.other.property.js.jsx",
+        "variable.other.constant.property.js.jsx",
+        "variable.other.object.property.js.jsx",
+        "variable.other.constant.object.property.js.jsx",
+        "variable.object.property.js.jsx",
+        "meta.definition.property.js.jsx variable.object.property.js.jsx",
+        "meta.object-literal.key.js.jsx",
+        "support.variable.property.js.jsx"
       ],
       "settings": {
         "foreground": "#EDEDED"
@@ -207,7 +279,11 @@
     },
 
     {
-      "scope": "meta.method.declaration.ts > storage.type.ts",
+      "scope": [
+        "meta.method.declaration.ts > storage.type.ts",
+        "meta.method.declaration.js > storage.type.js",
+        "meta.method.declaration.js.jsx > storage.type.js.jsx"
+      ],
       "settings": {
         "foreground": "#EDEDED"
       }
@@ -227,7 +303,21 @@
         "keyword.operator.logical.ts",
         "keyword.operator.relational.ts",
         "keyword.operator.relational.tsx",
-        "keyword.operator.expression.void.ts"
+        "keyword.operator.expression.void.ts",
+        "keyword.operator.new.js",
+        "keyword.operator.instanceof.js",
+        "keyword.operator.expression.instanceof.js",
+        "keyword.operator.assignment.js",
+        "keyword.operator.arithmetic.js",
+        "keyword.operator.logical.js",
+        "keyword.operator.relational.js",
+        "keyword.operator.new.js.jsx",
+        "keyword.operator.instanceof.js.jsx",
+        "keyword.operator.expression.instanceof.js.jsx",
+        "keyword.operator.assignment.js.jsx",
+        "keyword.operator.arithmetic.js.jsx",
+        "keyword.operator.logical.js.jsx",
+        "keyword.operator.relational.js.jsx"
       ],
       "settings": {
         "foreground": "#F8A6C8"
@@ -258,7 +348,11 @@
         "variable.language.super",
         "variable.language.super.ts",
         "variable.language.this",
-        "variable.language.this.ts"
+        "variable.language.this.ts",
+        "variable.language.super.js",
+        "variable.language.this.js",
+        "variable.language.super.js.jsx",
+        "variable.language.this.js.jsx"
       ],
       "settings": {
         "foreground": "#F1A275"
@@ -289,7 +383,15 @@
         "punctuation.definition.string.begin.ts",
         "punctuation.definition.string.end.ts",
         "punctuation.definition.string.template.begin.ts",
-        "punctuation.definition.string.template.end.ts"
+        "punctuation.definition.string.template.end.ts",
+        "punctuation.definition.string.begin.js",
+        "punctuation.definition.string.end.js",
+        "punctuation.definition.string.template.begin.js",
+        "punctuation.definition.string.template.end.js",
+        "punctuation.definition.string.begin.js.jsx",
+        "punctuation.definition.string.end.js.jsx",
+        "punctuation.definition.string.template.begin.js.jsx",
+        "punctuation.definition.string.template.end.js.jsx"
       ],
       "settings": {
         "foreground": "#83D19B"
@@ -301,7 +403,10 @@
         "punctuation.definition.template-expression.begin",
         "punctuation.definition.template-expression.end",
         "punctuation.section.embedded",
-        "punctuation.section.embedded.ts"
+        "punctuation.section.embedded.ts",
+        "punctuation.section.embedded.js",
+        "punctuation.section.embedded.js.jsx",
+        "punctuation.section.embedded.tsx"
       ],
       "settings": {
         "foreground": "#EDEDED"
@@ -321,7 +426,13 @@
         "constant.language.boolean.true.ts",
         "constant.language.boolean.false.ts",
         "constant.language.null",
-        "constant.language.null.ts"
+        "constant.language.null.ts",
+        "constant.language.boolean.true.js",
+        "constant.language.boolean.false.js",
+        "constant.language.null.js",
+        "constant.language.boolean.true.js.jsx",
+        "constant.language.boolean.false.js.jsx",
+        "constant.language.null.js.jsx"
       ],
       "settings": {
         "foreground": "#F1A275"
@@ -331,7 +442,9 @@
     {
       "scope": [
         "constant.language.undefined",
-        "constant.language.undefined.ts"
+        "constant.language.undefined.ts",
+        "constant.language.undefined.js",
+        "constant.language.undefined.js.jsx"
       ],
       "settings": {
         "foreground": "#BDA0F1"
@@ -343,7 +456,23 @@
         "support.class.console",
         "support.variable.console",
         "support.object.console",
-        "variable.language.console"
+        "variable.language.console",
+        "support.class.console.ts",
+        "support.variable.console.ts",
+        "support.object.console.ts",
+        "variable.language.console.ts",
+        "support.class.console.tsx",
+        "support.variable.console.tsx",
+        "support.object.console.tsx",
+        "variable.language.console.tsx",
+        "support.class.console.js",
+        "support.variable.console.js",
+        "support.object.console.js",
+        "variable.language.console.js",
+        "support.class.console.js.jsx",
+        "support.variable.console.js.jsx",
+        "support.object.console.js.jsx",
+        "variable.language.console.js.jsx"
       ],
       "settings": {
         "foreground": "#B897F4"
@@ -360,7 +489,9 @@
     {
       "scope": [
         "punctuation.definition.comment.ts",
-        "punctuation.definition.comment.json.comments"
+        "punctuation.definition.comment.json.comments",
+        "punctuation.definition.comment.js",
+        "punctuation.definition.comment.js.jsx"
       ],
       "settings": {
         "foreground": "#808080"
@@ -371,6 +502,8 @@
       "scope": [
         "string.regexp",
         "string.regexp.ts",
+        "string.regexp.js",
+        "string.regexp.js.jsx",
 
         "punctuation.definition.group",
         "punctuation.definition.character-class",
@@ -400,7 +533,19 @@
         "string.regexp.ts meta",
         "string.regexp.ts support",
 
-        "string.regexp.ts keyword.operator.logical.ts"
+        "string.regexp.ts keyword.operator.logical.ts",
+        "string.regexp.js keyword",
+        "string.regexp.js punctuation",
+        "string.regexp.js constant",
+        "string.regexp.js variable",
+        "string.regexp.js meta",
+        "string.regexp.js support",
+        "string.regexp.js.jsx keyword",
+        "string.regexp.js.jsx punctuation",
+        "string.regexp.js.jsx constant",
+        "string.regexp.js.jsx variable",
+        "string.regexp.js.jsx meta",
+        "string.regexp.js.jsx support"
       ],
       "settings": {
         "foreground": "#83D19B"
@@ -429,13 +574,17 @@
     },
 
     {
-      "scope": "punctuation.decorator.ts",
+      "scope": [
+        "punctuation.decorator.ts",
+        "punctuation.decorator.js",
+        "punctuation.decorator.js.jsx"
+      ],
       "settings": {
         "foreground": "#8FB8E8"
       }
     },
     {
-      "scope": "entity.name.function.member.custom.ts",
+      "scope": "entity.name.function.member.custom",
       "settings": {
         "foreground": "#EDEDED"
       }

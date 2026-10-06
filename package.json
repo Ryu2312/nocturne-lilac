@@ -22,13 +22,18 @@
         "path": "./syntaxes/typescript-void.tmLanguage.json",
         "scopeName": "typescript.void.injection",
         "injectTo": [
-          "source.ts"
+          "source.js",
+          "source.js.jsx",
+          "source.ts",
+          "source.tsx"
         ]
       },
       {
         "path": "./syntaxes/typescript-methods.tmLanguage.json",
-        "scopeName": "source.ts.lilac-ember",
+        "scopeName": "source.lilac-ember.methods",
         "injectTo": [
+          "source.js",
+          "source.js.jsx",
           "source.ts",
           "source.tsx"
         ]

@@ -1,11 +1,15 @@
 {
-  "scopeName": "source.ts.lilac-ember",
-  "injectionSelector": "L:source.ts, L:source.tsx",
+  "scopeName": "source.lilac-ember.methods",
+  "injectionSelector": "L:source.js -comment -string, L:source.js.jsx -comment -string, L:source.ts -comment -string, L:source.tsx -comment -string",
 
   "patterns": [
     {
+      "match": "\\bconsole\\b(?=\\s*\\.)",
+      "name": "variable.language.console"
+    },
+    {
       "match": "(?<=\\.)[A-Za-z_$][\\w$]*(?=\\s*\\()",
-      "name": "entity.name.function.member.custom.ts"
+      "name": "entity.name.function.member.custom"
     }
   ]
 }
