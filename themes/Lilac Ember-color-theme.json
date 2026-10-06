@@ -87,6 +87,7 @@
         "foreground": "#F8A6C8"
       }
     },
+
     {
       "scope": [
         "support.type",
@@ -103,18 +104,21 @@
         "foreground": "#B897F4"
       }
     },
+
     {
       "scope": "support.type.void.ts",
       "settings": {
         "foreground": "#F8A6C8"
       }
     },
+
     {
       "scope": "meta.class.ts entity.name.type.class.ts",
       "settings": {
         "foreground": "#F1A275"
       }
     },
+
     {
       "scope": [
         "entity.name.type.class.ts",
@@ -128,12 +132,14 @@
         "foreground": "#B897F4"
       }
     },
+
     {
       "scope": "new.expr.ts meta.function-call.ts entity.name.function.ts",
       "settings": {
         "foreground": "#F1A275"
       }
     },
+
     {
       "scope": [
         "meta.definition.function.ts entity.name.function.ts",
@@ -144,24 +150,14 @@
         "foreground": "#B897F4"
       }
     },
+
     {
-      "scope": [
-        "meta.definition.method.ts entity.name.function.ts",
-        "meta.method.declaration.ts entity.name.function.ts"
-      ],
+      "scope": "meta.definition.method.ts entity.name.function.ts",
       "settings": {
         "foreground": "#EDEDED"
       }
     },
-    {
-      "scope": [
-        "meta.function-call.ts entity.name.function.ts",
-        "meta.function-call.ts entity.name.function.member.ts"
-      ],
-      "settings": {
-        "foreground": "#EDEDED"
-      }
-    },
+
     {
       "scope": [
         "variable.other.readwrite",
@@ -175,6 +171,7 @@
         "foreground": "#BDA0F1"
       }
     },
+
     {
       "scope": [
         "variable.other.object.ts",
@@ -184,12 +181,14 @@
         "foreground": "#B897F4"
       }
     },
+
     {
       "scope": ["variable.parameter", "variable.parameter.ts"],
       "settings": {
         "foreground": "#BDA0F1"
       }
     },
+
     {
       "scope": [
         "variable.other.property",
@@ -206,12 +205,14 @@
         "foreground": "#EDEDED"
       }
     },
+
     {
       "scope": "meta.method.declaration.ts > storage.type.ts",
       "settings": {
         "foreground": "#EDEDED"
       }
     },
+
     {
       "scope": [
         "keyword.operator.new",
@@ -232,12 +233,14 @@
         "foreground": "#F8A6C8"
       }
     },
+
     {
       "scope": "keyword.operator.type.annotation.ts",
       "settings": {
         "foreground": "#EDEDED"
       }
     },
+
     {
       "scope": [
         "punctuation.definition.typeparameters",
@@ -249,6 +252,7 @@
         "foreground": "#EDEDED"
       }
     },
+
     {
       "scope": [
         "variable.language.super",
@@ -260,6 +264,7 @@
         "foreground": "#F1A275"
       }
     },
+
     {
       "scope": [
         "entity.name.import",
@@ -270,6 +275,7 @@
         "foreground": "#BDA0F1"
       }
     },
+
     {
       "scope": [
         "string",
@@ -289,6 +295,7 @@
         "foreground": "#83D19B"
       }
     },
+
     {
       "scope": [
         "punctuation.definition.template-expression.begin",
@@ -300,12 +307,14 @@
         "foreground": "#EDEDED"
       }
     },
+
     {
       "scope": "constant.numeric",
       "settings": {
         "foreground": "#F1A275"
       }
     },
+
     {
       "scope": [
         "constant.language.boolean",
@@ -318,6 +327,7 @@
         "foreground": "#F1A275"
       }
     },
+
     {
       "scope": [
         "constant.language.undefined",
@@ -327,6 +337,7 @@
         "foreground": "#BDA0F1"
       }
     },
+
     {
       "scope": [
         "support.class.console",
@@ -338,12 +349,24 @@
         "foreground": "#B897F4"
       }
     },
+
     {
       "scope": "punctuation",
       "settings": {
         "foreground": "#EDEDED"
       }
     },
+
+    {
+      "scope": [
+        "punctuation.definition.comment.ts",
+        "punctuation.definition.comment.json.comments"
+      ],
+      "settings": {
+        "foreground": "#808080"
+      }
+    },
+
     {
       "scope": [
         "string.regexp",
@@ -367,7 +390,6 @@
         "constant.other.character-class.set.regexp",
         "constant.other.character-class.regexp",
         "constant.character.set.regexp",
-        "constant.character",
         "constant.other.option",
         "constant.character.escape",
 
@@ -384,22 +406,38 @@
         "foreground": "#83D19B"
       }
     },
+
     {
       "scope": "support.type.property-name.json",
       "settings": {
         "foreground": "#EDEDED"
       }
     },
+
     {
       "scope": "constant.language.json",
       "settings": {
         "foreground": "#F1A275"
       }
     },
+
     {
       "scope": "comment",
       "settings": {
         "foreground": "#808080"
+      }
+    },
+
+    {
+      "scope": "punctuation.decorator.ts",
+      "settings": {
+        "foreground": "#8FB8E8"
+      }
+    },
+    {
+      "scope": "entity.name.function.member.custom.ts",
+      "settings": {
+        "foreground": "#EDEDED"
       }
     }
   ]
