@@ -1,0 +1,30 @@
+{
+  "name": "nocturne-lilac",
+  "displayName": "Nocturne Lilac",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.140.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Lilac Ember",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Lilac Ember-color-theme.json"
+      }
+    ],
+    "grammars": [
+      {
+        "path": "./syntaxes/typescript-void.tmLanguage.json",
+        "scopeName": "typescript.void.injection",
+        "injectTo": [
+          "source.ts"
+        ]
+      }
+    ]
+  }
+}

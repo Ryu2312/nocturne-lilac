@@ -1,0 +1,10 @@
+{
+  "scopeName": "typescript.void.injection",
+  "injectionSelector": "L:source.ts",
+  "patterns": [
+    {
+      "match": "\\bvoid\\b",
+      "name": "support.type.void.ts"
+    }
+  ]
+}
