@@ -1,10 +1,10 @@
 {
   "scopeName": "typescript.void.injection",
-  "injectionSelector": "L:source.ts",
+  "injectionSelector": "L:source.js -comment -string, L:source.js.jsx -comment -string, L:source.ts -comment -string, L:source.tsx -comment -string",
   "patterns": [
     {
       "match": "\\bvoid\\b",
-      "name": "support.type.void.ts"
+      "name": "support.type.void"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Lilac Ember
 
-A dark Visual Studio Code theme focused on a clean, low-distraction interface with soft lilac, pink, orange, green, and neutral tones.
+A dark Visual Studio Code theme with a neutral interface and soft lilac, pink, orange, and green syntax accents. Includes custom method-call highlighting and `void` highlighting for JavaScript, TypeScript, JSX, and TSX.
 
 ## Preview
 
@@ -19,9 +19,9 @@ A dark Visual Studio Code theme focused on a clean, low-distraction interface wi
 | Green      | `#83D19B` |
 | Comments   | `#808080` |
 
-## Highlights
+## Features
 
-Lilac Ember provides custom highlighting for:
+Lilac Ember includes syntax colors for:
 
 - Keywords and operators
 - Types, classes, interfaces, and namespaces
@@ -37,61 +37,38 @@ Lilac Ember provides custom highlighting for:
 - Git decorations
 - VS Code Explorer and editor UI
 
-The theme also includes a small TypeScript grammar extension to give `void` its own color without affecting other primitive types.
+Small TextMate grammar injections add method-call highlighting and a distinct color for `void` in JavaScript (`.js`), TypeScript (`.ts`), JSX (`.jsx`), and TSX (`.tsx`). These injections ignore comments and strings.
 
 ## Installation
 
-### Development
+### From a VSIX
 
-Clone the repository and open it with Visual Studio Code:
+Create a local extension package and install it:
 
 ```bash
-git clone <repository-url>
-cd lilac-ember
+npx @vscode/vsce package
+code --install-extension lilac-ember-0.1.2.vsix
+```
+
+After installation, open **Preferences → Color Theme** and select **Lilac Ember**.
+
+### Development
+
+Clone the repository and open the project in VS Code:
+
+```bash
+git clone https://github.com/Ryu2312/nocturne-lilac.git
+cd nocturne-lilac
 code .
 ```
 
-Press `F5` to launch the **Extension Development Host** and preview the theme.
+Press `F5` to launch the **Extension Development Host**, then select **Lilac Ember** from **Preferences → Color Theme**.
 
-Then open:
+## Project files
 
-```text
-Preferences → Color Theme
-```
-
-and select:
-
-```text
-Lilac Ember
-```
-
-### Extension package
-
-The theme can be packaged as a VS Code extension and installed locally using a `.vsix` package.
-
-## Development
-
-The theme is built as a standard Visual Studio Code color theme extension.
-
-Main theme file:
-
-```text
-themes/
-└── lilac-ember-color-theme.json
-```
-
-TypeScript grammar extension:
-
-```text
-syntaxes/
-└── typescript-void.tmLanguage.json
-```
-
-## Version
-
-**0.1.0**
-
-This is the first development version of Lilac Ember.
+- Color theme: `themes/Lilac Ember-color-theme.json`
+- `void` highlighting: `syntaxes/typescript-void.tmLanguage.json`
+- Method-call highlighting: `syntaxes/typescript-methods.tmLanguage.json`
 
 ## License
 
