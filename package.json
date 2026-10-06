@@ -1,8 +1,8 @@
 {
-  "name": "nocturne-lilac",
-  "displayName": "Nocturne Lilac",
-  "description": "",
-  "version": "0.0.1",
+  "name": "lilac-ember",
+  "displayName": "Lilac Ember",
+  "description": "A dark VS Code theme with a soft lilac, pink, orange, and green color palette.",
+  "version": "0.1.2",
   "engines": {
     "vscode": "^1.140.0"
   },
@@ -23,6 +23,14 @@
         "scopeName": "typescript.void.injection",
         "injectTo": [
           "source.ts"
+        ]
+      },
+      {
+        "path": "./syntaxes/typescript-methods.tmLanguage.json",
+        "scopeName": "source.ts.lilac-ember",
+        "injectTo": [
+          "source.ts",
+          "source.tsx"
         ]
       }
     ]

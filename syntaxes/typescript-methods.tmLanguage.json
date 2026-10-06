@@ -1,0 +1,11 @@
+{
+  "scopeName": "source.ts.lilac-ember",
+  "injectionSelector": "L:source.ts, L:source.tsx",
+
+  "patterns": [
+    {
+      "match": "(?<=\\.)[A-Za-z_$][\\w$]*(?=\\s*\\()",
+      "name": "entity.name.function.member.custom.ts"
+    }
+  ]
+}
